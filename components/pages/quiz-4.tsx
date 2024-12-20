@@ -15,10 +15,13 @@ const DynamicWheel = dynamic(() => import('react-custom-roulette').then((module)
 });
 
 const data = [
-  { option: 'À Luz de Velas', style: { backgroundColor: '#f47c41', textColor: '#0e3146' } },
   { option: 'Piatti & Vino', style: { backgroundColor: '#f4e04b', textColor: '#0e3146' } },
   { option: 'Jappa', style: { backgroundColor: '#0e3146', textColor: '#6fb7d9' } },
   { option: 'Da Villa', style: { backgroundColor: '#6fb7d9', textColor: '#0e3146' } },
+  {
+    option: 'À Luz de Velas e depois filme e carinho',
+    style: { backgroundColor: '#f47c41', textColor: '#0e3146' },
+  },
 ];
 
 export default function Quiz4() {
