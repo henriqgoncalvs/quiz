@@ -40,7 +40,9 @@ export default function Quiz4() {
     }
   };
 
-  if (!window) return;
+  if (typeof window === undefined) {
+    return <></>;
+  }
 
   return (
     <div className="flex flex-col w-full items-center justify-center gap-4">
