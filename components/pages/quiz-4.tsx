@@ -15,13 +15,13 @@ const DynamicWheel = dynamic(() => import('react-custom-roulette').then((module)
 });
 
 const data = [
-  { option: 'Sair pra jantar', style: { backgroundColor: '#f4e04b', textColor: '#0e3146' } },
   { option: 'Ir pra festa', style: { backgroundColor: '#0e3146', textColor: '#6fb7d9' } },
   { option: 'Correr', style: { backgroundColor: '#6fb7d9', textColor: '#0e3146' } },
   {
     option: 'Filme e cafuné',
     style: { backgroundColor: '#f47c41', textColor: '#0e3146' },
   },
+  { option: 'Da Villa', style: { backgroundColor: '#f4e04b', textColor: '#0e3146' } },
 ];
 
 export default function Quiz4() {
