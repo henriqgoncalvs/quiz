@@ -36,6 +36,8 @@ export default function Page() {
     }
   };
 
+  if (!window) return;
+
   return (
     <div className="flex flex-col w-full items-center justify-center gap-4">
       <h1 className="text-center text-3xl mb-16 mx-3">Gire a Roleta</h1>
