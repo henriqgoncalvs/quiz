@@ -42,7 +42,7 @@ export default function Quiz3() {
       {canGoToNextStep && (
         <div className="flex flex-col items-center justify-center my-4 gap-2">
           <p className="w-full text-center">
-            Que saudade!! 👏👏 Além disso você ganhou um jantar surpresa
+            Que saudade!! 👏👏 Além disso você ganhou um programa surpresa para hoje
           </p>
           <Button onClick={() => router.push('quiz-4')}>Clique para ver</Button>
         </div>
