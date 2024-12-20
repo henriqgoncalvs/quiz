@@ -8,7 +8,11 @@ import Confetti from 'react-confetti';
 import { useRef, useState } from 'react';
 import { useWindowSize } from '@/lib/use-window-size';
 
-import { Wheel } from 'react-custom-roulette';
+import dynamic from 'next/dynamic';
+
+const DynamicWheel = dynamic(() => import('react-custom-roulette').then((module) => module.Wheel), {
+  ssr: false,
+});
 
 const data = [
   { option: 'À Luz de Velas', style: { backgroundColor: '#f47c41', textColor: '#0e3146' } },
@@ -42,7 +46,7 @@ export default function Quiz4() {
     <div className="flex flex-col w-full items-center justify-center gap-4">
       <h1 className="text-center text-3xl mb-16 mx-3">Gire a Roleta</h1>
 
-      <Wheel
+      <DynamicWheel
         mustStartSpinning={mustSpin && !canGoToNextStep}
         prizeNumber={3}
         data={data}
